@@ -1,0 +1,11 @@
+div.list-wrapper {
+    width: 90%;
+    border: 1px solid black;
+    margin: 1em auto;
+    padding: 1em;
+    text-align: left;
+}
+
+div.players-header > a, .players-header {
+    font-size: 28pt;
+}

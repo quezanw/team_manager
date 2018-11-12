@@ -1,0 +1,26 @@
+<div class="status-wrapper">
+  <h1>Player Status - Game num</h1>
+  <div class="game-nav-header">
+    <a [routerLink]="['/status', 'game', 1]">Game 1</a> | 
+    <a [routerLink]="['/status', 'game', 2]">Game 2</a> | 
+    <a [routerLink]="['/status', 'game', 3]">Game 3</a>
+  </div>
+  <table class="table table-bordered ">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of game">
+        <td>{{player.name}}</td>
+        <td>
+            <button (click)="updateStatus(player._id, 'playing')" class="btn" [ngClass]="{'btn-success': player.status == 'playing'}">Playing</button>
+            <button (click)="updateStatus(player._id, 'out')" class="btn" [ngClass]="{'btn-danger':  player.status == 'out' }">Not Playing</button>
+            <button (click)="updateStatus(player._id, 'undecided')" class="btn" [ngClass]="{'btn-warning':  player.status == 'undecided'}">Undecided</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

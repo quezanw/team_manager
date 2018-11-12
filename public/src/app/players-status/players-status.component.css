@@ -1,0 +1,19 @@
+
+
+h1 {
+    margin: 1em 0;
+}
+
+.game-nav-header {
+    width: 80%;
+    margin: 1em auto;
+}
+
+.game-nav-header > a, .game-nav-header {
+    font-size: 26pt;
+    text-align: center;
+}
+
+td > button {
+    margin: 0 .5em;
+}

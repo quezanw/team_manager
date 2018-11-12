@@ -1,0 +1,9 @@
+<div class="add-wrapper">
+    <form (submit)="submitPlayer()" class="form form-horizontal">
+        <input class="form-control" type="text" [(ngModel)]="new_player.name" name="new_player.name" placeholder="name">
+        <input class="form-control" type="text" [(ngModel)]="new_player.position" name="new_player.position" placeholder="preferred position">
+        <button class="form-control btn btn-success" type="submit">add</button>
+    </form>
+    <p class="success">{{success}}</p>
+    <p class="error">{{error}}</p>
+</div>
